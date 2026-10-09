@@ -688,3 +688,13 @@ main {
     overflow-wrap: anywhere;
   }
 }
+.menu-button { font:inherit; padding:.75rem 1rem; min-height:44px; cursor:pointer; }
+.nav-list { list-style:none; margin:.75rem 0 0; padding:0; /* TODO: narrow layout. */ }
+.nav-list a { display:block; color:var(--paper); padding:.75rem; text-decoration:none; }
+/* TODO: hover, focus-visible, active, and aria-current styles. */
+.nav-list a:hover { text-decoration:underline; }
+.nav-list a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.nav-list a:active { opacity:.7; }
+.nav-list a[aria-current="page"] { font-weight:700; text-decoration:underline; }
+/* TODO: hide only the enhanced, collapsed narrow list. */
+.js .nav-list[hidden] { display:none; }
